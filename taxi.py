@@ -15,8 +15,14 @@ print(f"se establecio el kilometraje de salida en: {kmsalida}km \n")
 importe=[0]
 print("ingresa el importe del viaje")
 while importe[-1] != -103:  
-    importe.append(int(input()))
-    #contar viajes:
-    print(f"Vas haciendo {len(importe)-1} viajes")
-    #total
-    print(sum(importe))
+    recaudacion = int(input())
+    if (recaudacion!= -103):
+        importe.append(recaudacion)
+        #contar viajes:
+        print(f"Vas haciendo {len(importe)-1} viajes")
+        #total
+        print("Sub-total: $", sum(importe))
+    else:
+        break
+
+print(f"La recaudacion total es de: $", sum(importe))

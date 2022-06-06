@@ -1,0 +1,6 @@
+##########################
+	 comienza el turno
+########################## 
+ 
+
+Ingresa el numero de movil: 
